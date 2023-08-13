@@ -103,12 +103,58 @@ footer {
 
 /* Iteration 1: Styling all the flex elements with (Justify-content:space-between) & (align-items:center) */
 
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* Iteration 2: Using flex-wrap */
+
+.movies{
+    flex-wrap: wrap;
+    min-height: 300px;
+    margin: 3% 14%;
+    
+}
 
 /* Iteration 3: Styling all the flex elements with (flex-direction:column), (Justify-content:space-evenly) */
 
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 /* Iteration 4: Animation */
+
+#scroll{
+    position: relative;
+    animation: mymove 3s infinite;
+    animation-play-state: running;
+}
+
+@keyframes mymove{
+    from{
+        top: 15px;
+    }
+    to{
+        top: 100px;
+    }
+}
+
 
 /* Iteration 5: Making webpage mobile responsive */
 
 
+@media only screen and (max-width: 600px){
+    .wrap-reverse{
+        flex-wrap: wrap-reverse;
+    }
+    .container{
+        text-align: center;
+    }
+    .button{
+        margin: 0% 2%;
+    }
+}
