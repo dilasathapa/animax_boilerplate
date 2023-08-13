@@ -30,6 +30,7 @@ header {
 
 nav {
     margin: 2% 7%;
+    /* border: 1px solid white; */
 }
 
 #scroll {
@@ -125,6 +126,7 @@ footer {
     flex-direction: column;
     justify-content: space-evenly;
 }
+
 
 /* Iteration 4: Animation */
 
